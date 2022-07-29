@@ -2,19 +2,17 @@ import './App.css';
 import { BrowserRouter, Link } from 'react-router-dom';
 import './style.scss';
 import { Router } from './router/Router';
+import { PrimaryButton } from './components/atoms/button/PrimaryButton';
+import { SecondaryButton } from './components/atoms/button/SecondaryButton';
+import { SearchInput } from './components/molecules/SearchInput';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className='container'>
-        <nav>
-          <Link to='/'>Home</Link>
-          <Link to='/page1'>Page1</Link>
-          <Link to='/page2'>Page2</Link>
-        </nav>
-      </div>
-      <Router />
-    </BrowserRouter>
+    <div className="App container">
+      <PrimaryButton>メインのボタン</PrimaryButton>
+      <SecondaryButton>二番目のボタン</SecondaryButton>
+      <SearchInput />
+    </div>
   );
 }
 
