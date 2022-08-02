@@ -17,7 +17,6 @@ export const useMessage = () => {
       position: 'top',
       duration: 2000,
       isClosable: true,
-
     });
   }, [toast]);
   return { showMessage }
